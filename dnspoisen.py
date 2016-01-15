@@ -1,4 +1,4 @@
-
+# Mostly not mine, from a python hacking book.
 import sys
 from scapy.all import *
 
