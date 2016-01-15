@@ -8,8 +8,7 @@
 #  sysctl net.ipv4.ip_forward=1
 #  echo 1 > /proc/sys/net/ipv4/ip_forward
 
-# scapy == women, use logging to stop it from
-#  yelling at you over stupid shit
+# stop warnings for things I don't need
 import logging
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 
