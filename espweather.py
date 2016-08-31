@@ -15,7 +15,7 @@ import sys
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 host = "api.openweathermap.org" 
-apikey = "178c4a582176ec153d4a909336fde1e7"
+apikey = "YOUR_API_KEY"
 zipcode = "25306"
 
 url = "/data/2.5/weather?zip=%s,us&APPID=%s" % (zipcode, apikey)
