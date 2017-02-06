@@ -1,9 +1,12 @@
-# requires ffmpeg, dvdauthor, genisoimage (apart of cdrkit)
+# requires ffmpeg, dvdauthor, genisoimage (a part of cdrkit)
+# used on Arch Linux, any distro will work
+# feel free to add to extensions list, these are the ones I use
 
 import sys
 import os
 import shutil
 import time
+
 
 frmat = "ntsc"
 extensions = ("avi", "mkv", "mp4")
@@ -71,10 +74,11 @@ if x != 0:
 
 
 os.system("eject")
-input("[!] Insert DVD and press any key to continue")
+input("[!] Insert DVD and press any enter to continue")
 print("[+] Burning DVD")
 # Give the drive time to spin up
 time.sleep(15)
+
 x = os.system("growisofs -dvd-compat -Z /dev/sr0=dvd.iso")
 if x != 0:
     print("Error, exiting")
