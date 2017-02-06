@@ -42,6 +42,7 @@ if os.path.isfile(chosen):
         print("Error, exiting")
         sys.exit()
 
+# This isn't working, dvd just plays, no menu's. Idk. Script still works though.
 print("[+] Creating xml")
 xml = """
 <dvdauthor>
@@ -77,13 +78,14 @@ os.system("eject")
 input("[!] Insert DVD and press any enter to continue")
 print("[+] Burning DVD")
 # Give the drive time to spin up
-time.sleep(15)
+time.sleep(25)
 
 x = os.system("growisofs -dvd-compat -Z /dev/sr0=dvd.iso")
 if x != 0:
     print("Error, exiting")
     sys.exit()
 
+# This isn't good, need better clean up.
 print("[+] Cleanup")
 os.remove(chosen[:-3]+"mpg")
 os.remove("dvd.xml")
