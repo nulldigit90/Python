@@ -1,5 +1,5 @@
 # requires ffmpeg, dvdauthor, genisoimage (a part of cdrkit)
-# used on Arch Linux, any distro will work
+# used on Arch Linux, any *nix distro should work
 # feel free to add to extensions list, these are the ones I use
 
 import sys
