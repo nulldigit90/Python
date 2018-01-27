@@ -1,7 +1,7 @@
 #! /usr/bin/python2
 
 # I guess scapy requires tcpdump to rid 
-#  fucking runtime log warnings... :/
+# runtime log warnings... :/
 #  pacman -S tcpdump
 
 # ip forrwarding until reboot
