@@ -39,5 +39,5 @@ else:
         l = load_urls(args[1])
         for i in l:
             redirectTest(i)
-    except Exception, e:
+    except Exception as e:
         print("Something went wrong: %s" % e)
