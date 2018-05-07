@@ -5,7 +5,7 @@ import requests
 import sys
 
 def redirectTest(url):
-    with open("no_redirects.txt", "w") as no_redirect:
+    with open("no_redirects.txt", "a") as no_redirect:
         try:
             r = requests.head(url, allow_redirects=False)
             if (r.status_code == 301):
